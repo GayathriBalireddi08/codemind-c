@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,k,pre,post,a,near,c,d,f;
+	scanf("%d",&k);
+	while(k--)
+	{
+	scanf("%d",&a);
+	for(i=a;i>0;i++)
+	{
+		c=0;
+		for(j=1;j<=i;j++)
+		{
+			if(i%j==0)
+			{
+				c++;
+			}
+		}
+		if(c==2)
+		{
+			pre=i;
+			break;
+		}
+	}
+	for(i=a;i>0;i--)
+	{
+		c=0;
+		for(j=1;j<=i;j++)
+		{
+			if(i%j==0)
+			{
+				c++;
+			}
+		}
+		if(c==2)
+		{
+			post=i;
+			break;
+		}
+	}
+  d=a-pre;
+  f=post-a;
+  near=(d>f)?pre:post;
+  printf("%d
+",near);
+	}
+}
