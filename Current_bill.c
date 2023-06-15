@@ -1,23 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    float a,b,c,s;
-    scanf("%f",&a);
-    if(a<199)
-    s=a*1.20;
-    else if(a>=200 && a<400)
-    s=a*1.50;
-    else if(a>=400 && a< 600)
-    s=a*1.80;
-    else 
-    s=a*2;
-    if(s<400)
+    int u;
+    float c;
+    scanf("%d",&u);
+    if(u<200)
     {
-        printf("%.2f",s+100);
+      printf("%.2f",(u*1.20)+100);  
     }
-    else if(s>400)
+    else if(u<400)
     {
-        s=s*15/100+s;
-        printf("%.2f",s);
+        printf("%.2f",(u*1.50)+100);
     }
+    else if (u<600)
+    {
+        printf("%.2f",((u*1.8*0.15)+(u*1.8)));
+    }
+    else
+    {
+        printf("%.2f",((u*2*0.15)+(u*2)));
+    }
+    
 }
