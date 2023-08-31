@@ -1,15 +1,17 @@
 #include<stdio.h>
-int main(){
-    int p,m,b,c,it,avg;
-    scanf("%d%d%d%d%d",&p,&b,&c,&m,&it);
-    avg=(p+b+c+m+it)/5;
+int main()
+{
+    int p,c,b,m,cs;
+    scanf("%d%d%d%d%d",&p,&c,&b,&m,&cs);
+    int avg;
+    avg=(p+c+b+m+cs)/5;
     if(avg>=90)
     {
         printf("Grade A");
     }
     else if(avg>=80)
     {
-       printf("Grade B");
+        printf("Grade B");
     }
     else if(avg>=70)
     {
