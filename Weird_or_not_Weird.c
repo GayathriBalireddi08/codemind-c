@@ -1,21 +1,22 @@
 #include<stdio.h>
-int main(){
+int main()
+{
     int n;
     scanf("%d",&n);
-    if(n%2==1)
-    printf("weird");
+    if(n%2!=0)
+    {
+        printf("weird");
+    }
+    else if(n%2==0 and 2<n<5)
+    {
+        printf("not weird");
+    }
+    else if(n%2==0 and 6<n<20)
+    {
+        printf("weird");
+    }
     else
     {
-        if(n>=2&&n<=5)
-        {
-            printf("not weird");
-        }
-        else if(n>=6&&n<=20)
-        {
-            printf("weird");
-        }
-        else{
-            printf("not weird");
-        }
+        printf("not weird");
     }
 }
