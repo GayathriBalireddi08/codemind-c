@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int S,T,B,K;
-    scanf("%d%d%d",&S,&T,&B);
-    K=S*T*B;
-    printf("%d KB",K);
+    int x,b1,b2,b3;
+    scanf("%d%d%d",&x,&b1,&b2);
+    b3=(3*x)-b1-b2;
+    printf("%d",b3);
 }
