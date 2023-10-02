@@ -1,14 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,d;
-    scanf("%d%d%d%d",&a,&b,&c,&d);
-    if((a,b,c,d)>=10)
+    int p1,p2,p3,p4;
+    scanf("%d%d%d%d",&p1,&p2,&p3,&p4);
+    if(p1>=10 && p2>=10 && p3>=10 && p4>=10)
     {
         printf("YES");
     }
-    else
-    {
+    else{
         printf("NO");
     }
 }
